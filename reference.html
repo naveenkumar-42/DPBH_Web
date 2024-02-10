@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">TEAM <span>EXCALIBUR</span><span class="animate" style="--i:1;"></span></a>
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+    </header>
+    <div class="reference">
+        <div class="main-text">
+            <h1>Document</h1>
+            <p>This is the reference page for detailed project information and instructions.</p>
+        </div>
+        
+        <div class="dark-pattern-analyzer">
+            <h2>Dark Pattern Detection with BERT</h2>
+            <p>
+                This project demonstrates how to use a pre-trained BERT (Bidirectional Encoder Representations from Transformers) model for detecting dark patterns in text data. Dark patterns are user interface design techniques that manipulate users into making decisions that benefit the business, often at the expense of the user's interests.
+            </p>
+            
+            <h3>Requirements</h3>
+            <ul>
+                <li>Python 3.x</li>
+                <li>TensorFlow</li>
+                <li>Transformers</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+            </ul>
+            
+            <p>To install the required packages, run the following command:</p>
+            <code>pip install tensorflow transformers pandas matplotlib seaborn</code>
+            
+            <h3>Usage</h3>
+            <p>
+                <strong>Training the Model:</strong> The model is trained using labeled text data. The training script (train_model.py) loads the data, preprocesses it, fine-tunes the BERT model, and saves the trained model.
+            </p>
+            <p>
+                <strong>Predicting Dark Patterns:</strong> Once the model is trained, you can use it to predict dark patterns in new text data. The script (predict_dark_patterns.py) loads the trained model, tokenizes the input text, makes predictions, and visualizes the predicted labels.
+            </p>
+            <p>
+                <strong>Data Visualization:</strong> The predicted labels can be visualized using different chart types. By default, the script uses a count plot to show the distribution of predicted labels. You can modify the script to use other chart types such as area charts or histograms.
+            </p>
+            
+            <h3>File Structure</h3>
+            <ul>
+                <li>train_model.py: Script to train the BERT model on labeled text data.</li>
+                <li>predict_dark_patterns.py: Script to predict dark patterns in new text data using the trained model.</li>
+                <li>requirements.txt: File listing the required Python packages for this project.</li>
+            </ul>
+            
+            <h3>Example Usage</h3>
+            <p>Train the model:</p>
+            <code>python train_model.py --data_path /path/to/labeled_data.tsv</code>
+            
+            <p>Predict dark patterns:</p>
+            <code>python predict_dark_patterns.py --data_path /path/to/new_data.tsv</code>
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>
+                Copyright &copy; 2024 by Team Excalibur 
+            </p>
+            
+        </div>
+            <div class="footer-iconTop">
+                <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+                
+            </div>
+            </footer>
+        
+<script src="script.js"></script>
+</body>
+</html>
