@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal_Portfolio</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-</head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -332,19 +313,30 @@ span {
         animation: aboutSpinner 8s linear infinite;
     }
 
+.about-member {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
 .about-content {
-    text-align:center ;
+    position: absolute;
+    bottom: -115px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 .about-content h3 {
-    font-size: 2.6rem;
+    font-size: 1.5rem;
     position: relative;
     display: inline-block;
 }
 
 .about-content p {
     position: relative;
-    font-size: 1.6rem;
+    font-size: 1rem;
     margin: 2rem 0 3rem;
 }
 
@@ -1059,185 +1051,173 @@ width: 100%;
     /* grow | shrink | basis */
 }
     
-</style>
+.reference {
+    padding: 10rem 9% 2rem;
+}
 
-<body>
+.reference .main-text h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
 
-    <!-- header design -->
-    <header class="header">
-        <a href="#" class="logo">TEAM <span>EXCALIBUR</span><span class="animate" style="--i:1;"></span></a>
-        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="reference.html">Documentation</a>
-            <a href="#contact">Contact</a>
-            <span class="active-nav"></span>
-            <span class="animate" style="--i:2;"></span>
-        </nav>
-    </header>
-    
-     <section class="home show-animate" id="home">
-        <!-- home section design -->
-          <div class="home-content">
-            <h1>Exploring Hidden Costs  :<span><br>
-                <span class="auto-type active-nav"></span>
-                <span class="animate" style="--i:2;"></span></h1>
-            <div class="text-animate">
-              <h3>Welcome</h3>
-              <span class="animate" style="--i:2;"></span>
-            </div>
-            <p>In the world of online shopping, there's often more than meets the eye. Hidden costs, those sneaky additional charges not readily apparent during a purchase, play a significant role. This presentation introduces our focus on exposing these concealed fees using web scraping, particularly with Beautiful Soup. Our goal is simple – to empower consumers with the knowledge they need to make informed decisions. Join us as we uncover the hidden side of e-commerce and discuss its impact on your shopping experience.
-            <span class="animate" style="--i:4;"></span>
-            </p>
-            <div class="btn-box">
-              <a href="reference.html" class="btn">Learn More</a>
-              <a target="_blank" href="https://github.com/naveenkumar-42/hidden_cost.git" class="btn">Project Source</a> 
-              <span class="animate" style="--i:5;"></span>
-            </div>
-          </div>
-          <!-- <img id="home_img" src="./img/its me.jpg"> -->
-          <span class="animate scroll" style="--i:6;"></span>
-          
-    </section>
-      
+.reference .main-text p {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
 
-    <!-- about section design -->
+.reference-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-   <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span> <span class="animate scroll" style="--i:1;"></span></h2>
-        <div class="about-member row-1">   
-        <div class="about-member">
-                <div class="about-img">
-                    <img src="images/sabarish.jpg" alt="Naveen Kumar">
-                    <span class="circle-spin"></span>
-                    <span class="animate scroll" style="--i:2;"></span>
-                </div>
-                <div class="about-content">
-                    <h3>SABARISH</h3>
-                    <p>Lorem, ipsum.</p>
-                </div>
-            </div>
-            <!-- Member 2 -->
-            <div class="about-member">
-                <div class="about-img">
-                    <img src="images/jeeva.jpg" alt="Member 3">
-                    <span class="circle-spin"></span>
-                    <span class="animate scroll" style="--i:4;"></span>
-                </div>
-                <div class="about-content">
-                    <h3>JEEVA</h3>
-                    <p>Description</p>
-                </div>
-            </div>
-            <!-- Repeat for Member 3 and Member 4 -->
-            <!-- Member 3 -->
-            <div class="about-member">
-                <div class="about-img">
-                    <img src="images/mugundhan.jpg" alt="Member 3">
-                    <span class="circle-spin"></span>
-                    <span class="animate scroll" style="--i:4;"></span>
-                </div>
-                <div class="about-content">
-                    <h3>MUGUNDHAN</h3>
-                    <p>Description</p>
-                </div>
-            </div>
-        </div>
-            <!-- Member 4 -->
-            <div class="about-member row-2">
-             <div class="about-member">
-                <div class="about-img">
-                    <img src="images/naveen.png" alt="Member 4">
-                    <span class="circle-spin"></span>
-                    <span class="animate scroll" style="--i:6;"></span>
-                </div>
-                <div class="about-content">
-                    <h3>NAVEEN KUMAR</h3>
-                    <p>Description</p>
-                </div>
-            </div>
+.reference-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
 
-            <div class="about-member">
-                <div class="about-img">
-                    <img src="images/padmashri.jpg" alt="Member 4">
-                    <span class="circle-spin"></span>
-                    <span class="animate scroll" style="--i:6;"></span>
-                </div>
-                <div class="about-content">
-                    <h3>PADMASHRI</h3>
-                    <p>Description</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
+.reference-content p {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
 
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact<span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
-        <form action="https://formspree.io/f/moqzggqb" method="POST" class="contact__form">
-          <div class="input-box">
-            <div class="input-field">
-              <input type="text" name="First Name" placeholder="First Name" required>
-              <span class="focus"></span>
-            </div>
-      
-            <div class="input-field">
-              <input type="text" name="Last Name" placeholder="Last Name" required>
-              <span class="focus"></span>
-            </div>
-          </div>
-      
-          <div class="input-box">
-            <div class="input-field">
-              <input type="number" name="Mobile Number" placeholder="Your Mobile Number" required>
-              <span class="focus"></span>
-            </div>
+.reference-content ol {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
 
-                <div class="input-field">
-                  <input type="email" name="Email address" placeholder="Email Address" required>
-                  <span class="focus"></span>
-                </div>
-          
-          </div>
-          
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--secondary-bg-color);
+    z-index: 100;
+}
 
-          <div class="textarea-field">
-            <textarea name="Message" cols="30" rows="10" placeholder="Your message is required...."></textarea>
-            <span class="focus"></span>
-          </div>
-      
-          <div class="btn-box btns">
-            <button type="submit" class="btn">Submit</button>
-          </div>
-        </form>
-      </section>
+.footer .footer-text {
+    font-size: 1.6rem;
+}
 
-    <footer class="footer">
-<div class="footer-text">
-    <p>
-        Copyright &copy; 2024 by Team Excalibur 
-    </p>
-    <span class="animate scroll" style="--i:1;"></span>
-</div>
-    <div class="footer-iconTop">
-        <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
-        <span class="animate scroll" style="--i:6;"></span>
-    </div>
-    </footer>
+.footer .footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .6rem;
+    margin-left: .5rem;
+}
 
+.footer .footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--bg-color);
+    transition: .5s;
+}
 
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings:["Naveenkumar P", "Developer", "Self Learner","Unique","Creative", "Empathetic"], 
-            typeSpeed:100,
-            backSpeed:50,
-            loop:true
-        })
-    </script>
+.footer .footer-iconTop a:hover i {
+    color: var(--main-color);
+}
 
-    <script src="js/script.js"></script>
-</body>
+@media (max-width: 768px) {
+    .reference .main-text h1 {
+        font-size: 4rem;
+    }
 
-</html>
+    .reference-content {
+        padding: 0 2rem;
+    }
+
+    .reference-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .reference-content p,
+    .reference-content ol {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .reference .main-text h1 {
+        font-size: 3.5rem;
+    }
+
+    .reference-content h2 {
+        font-size: 2rem;
+    }
+
+    .reference-content p,
+    .reference-content ol {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 371px) {
+    .reference .main-text h1 {
+        font-size: 3rem;
+    }
+}
+
+.dark-pattern-analyzer {
+    background-color: var(--secondary-bg-color);
+    border-radius: .6rem;
+    padding: 4rem 8rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark-pattern-analyzer h2 {
+    color: var(--main-color);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.dark-pattern-analyzer h3 {
+    color: var(--main-color);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.dark-pattern-analyzer p {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.dark-pattern-analyzer ul {
+    margin-bottom: 2rem;
+}
+
+.dark-pattern-analyzer ul li {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.dark-pattern-analyzer code {
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    padding: .5rem;
+    border-radius: .3rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 3rem;
+}
+
+.dark-pattern-analyzer code::before,
+.dark-pattern-analyzer code::after {
+    content: '\00a0';
+}
+
+.dark-pattern-analyzer strong {
+    color: var(--main-color);
+    font-weight: 600;
+}
